@@ -1,6 +1,7 @@
 import random
 import pygame
 pygame.mixer.init(44100, -16, 2, 2048)
+pygame.init()
 
 DIRECTORY = "C:\\Users\\utente\\PycharmProjects\\testgame2\\resources"
 
