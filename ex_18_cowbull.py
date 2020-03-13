@@ -68,7 +68,7 @@ print("Ho generato un numero di 4 cifre da 0 a 9.\nLa prima cifra non può esser
 
 MainLoop = True
 while MainLoop:
-    print(nbr2guess)
+    #print(nbr2guess)
     check = True
     while check:
         try:
