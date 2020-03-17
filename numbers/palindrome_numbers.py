@@ -1,3 +1,5 @@
+# somma delle cifre inverse e rilevamento numero palindromo risultante
+# al n 196 l'iterazione è infinita(forse?)
 
 import time
 
