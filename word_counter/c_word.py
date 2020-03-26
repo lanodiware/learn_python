@@ -35,8 +35,8 @@ counted = word_counter('nuova_riveduta.txt')
 
 count = 0
 for i in counted:
-    if i.lower() in dizionario and len(i) > 3 :
+    if i.lower() in dizionario :
         print(str(i) + "\t" + str(counted[i]))
         count += 1
-        if count > 10:
+        if count > 100:
             break
