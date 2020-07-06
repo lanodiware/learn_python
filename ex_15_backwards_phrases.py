@@ -17,7 +17,6 @@ def backwards_l(sentence):
 
     return new_sentence
 
-
 def backwards_w(sentence):
     words = sentence.split(' ')
     bwords = ''

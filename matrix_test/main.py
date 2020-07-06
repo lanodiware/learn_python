@@ -3,6 +3,7 @@
 from random import randint
 from time import sleep
 import os
+import copy
 
 def check_mat(m):
     counter = {
@@ -16,19 +17,35 @@ def check_mat(m):
         "8": 0,
         "9": 0
     }
-    counters = []
-    for rows in m:
-        for i in range(1, 10):
-            if i in rows:
-            	c = counter
-                for x in rows:
-                    if x == i:
-                        c[str(i)] += 1
+    counters_r = []
+    counters_c = []
+    counters_q = []
+    for i in range(0, 9):
+        counters_r.append(copy.deepcopy(counter))
+        counters_c.append(copy.deepcopy(counter))
+        counters_q.append(copy.deepcopy(counter))
 
-        print("Conteggio riga:", rows)
-        print(c)
-        sleep(1)
+    # righe
+    for i in range(0, 9):
+        # numeri
+        for x in m[i]:
+            counters_r[i][str(x)] += 1
 
+    numat = []
+    # flip table
+    for i in range(0, 9):
+        nurow = []
+        for x in range(0, 9):
+            nurow.append(m[x][i])
+        numat.append(nurow)
+
+    # colonne
+    for i in range(0, 9):
+        # numeri
+        for x in numat[i]:
+            counters_c[i][str(x)] += 1
+
+    # quadrati 
 
 def pop_matrix():
     m = []

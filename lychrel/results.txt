@@ -3853,3 +3853,19 @@ Iterazione: 172491 digits: 71455
 Iterazione: 172505 digits: 71461
 Iterazione: 172519 digits: 71466
 Iterazione: 172532 digits: 71470
+Lancio: 2020-06-24 13:32:16.753333
+Iterazione: 172550 digits: 71478
+Iterazione: 172568 digits: 71485
+Iterazione: 172586 digits: 71491
+Lancio: 2020-06-24 13:34:32.303398
+Lancio: 2020-06-24 13:40:53.621154
+Iterazione: 172604 digits: 71499
+Iterazione: 172622 digits: 71506
+Iterazione: 172640 digits: 71514
+Iterazione: 172658 digits: 71522
+Iterazione: 172676 digits: 71528
+Iterazione: 172694 digits: 71536
+Iterazione: 172712 digits: 71544
+Iterazione: 172730 digits: 71553
+Iterazione: 172748 digits: 71561
+Iterazione: 172766 digits: 71569

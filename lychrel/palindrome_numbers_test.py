@@ -23,7 +23,7 @@ def pal_num(n):
         ris = str(n + revn)
         # if the result is palindrome then return
         if ris == ris[len(ris)::-1]:
-            time.sleep(0.5)
+            #time.sleep(0.5)
             print("Iterazioni:", count)
             return orig, int(ris)
         # if not palindrome set the result as new n and repeat the calc
@@ -34,7 +34,7 @@ def pal_num(n):
         count += 1
 
 results = []
-for i in range(10, 200):
+for i in range(10, 100):
     results.append(pal_num(i))
 
 print(results)
