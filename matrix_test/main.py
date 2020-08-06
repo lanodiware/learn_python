@@ -11,7 +11,7 @@ with open("sudokus.txt", "w") as f:
 
 for i in gensud.requestsudoku(qty):
     with open("sudokus.txt", "a") as f:
-        f.write("Sudoku:\n")
+        f.write("Sudoku:\n\n")
         for x in i:
             f.write(str(x) + "\n")
         f.write("\n=======================\n\n")
