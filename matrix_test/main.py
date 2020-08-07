@@ -1,10 +1,12 @@
 
 import gensud
 
-try:
-    qty = int(input("Quanti sudoku tu servono? -> "))
-except ValueError:
-    print("Devi inserire un numero!")
+while True:
+    try:
+        qty = int(input("Quanti sudoku tu servono? -> "))
+        break
+    except ValueError:
+        print("Devi inserire un numero!")
 
 with open("sudokus.txt", "w") as f:
     f.close()
