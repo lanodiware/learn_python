@@ -31,16 +31,13 @@ def drawthis(lar, deg, limit):
 
 ## Main
 
-def maincycle():
-    fromthis, tothis = 1, 376
-    for angle in range(fromthis, tothis):
-        f.clear()
-        l, a, lim = (1, angle, 150)
-        f.penup()
-        f.setposition(1000, 1000)
-        f.pendown()
-        dname = "drawing_{}.eps".format(angle)
-        drawthis(l, a, lim).getcanvas().postscript(file=dname)
-        eps2png(dname)
+def maincycle(l, angle, lim):
+    f.clear()
+    f.penup()
+    f.setposition(1000, 1000)
+    f.pendown()
+    dname = "test_{}.eps".format(angle)
+    drawthis(l, angle, lim).getcanvas().postscript(file=dname)
+    eps2png(dname)
 
-maincycle()
+maincycle(2, 179, 300)
